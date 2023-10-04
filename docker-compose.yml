@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  db-timezone:
+    image: mysql
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_DATABASE: demo-timezone
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: timezone
+    volumes:
+      - ./db-timezone:/var/lib/mysql
+    ports:
+      - 3306:3306
