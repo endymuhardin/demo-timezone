@@ -43,3 +43,13 @@ Setup Database
     ```
     mysql -h 127.0.0.1 -u demo -p demo-timezone
     ```
+
+## Set Timezone di JVM ##
+
+* Menggunakan opsi command line
+
+    ```
+    java -Duser.timezone="Asia/Jakarta" -jar target/*jar
+    ```
+
+##
